@@ -1,0 +1,6 @@
+<div class="subreddit panel panel-default" *ngFor="let subreddit of subreddits" (click)="goToSubredditDetail(subreddit.id)">
+  <div class="panel-body">
+    <h3>{{subreddit.title}}</h3>
+    <h5>Subscribers:{{subreddit.subscriberCount}}</h5>
+  </div>
+</div>

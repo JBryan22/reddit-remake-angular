@@ -1,3 +1,5 @@
-<p>
-  post-detail works!
-</p>
+<h2>{{postToDisplay.title}}</h2>
+<p>{{postToDisplay.content}}</p>
+<p>{{postToDisplay.id}}</p>
+<img *ngIf="postToDisplay.imageURL" src={{postToDisplay.imageURL}}>
+<iframe *ngIf="postToDisplay.videoURL" width="450" height="600" [src]="https://i.redd.it/cfprqrot42oz.jpg | safe"></iframe>

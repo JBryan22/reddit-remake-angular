@@ -10,6 +10,7 @@ import { SubredditDetailComponent } from './subreddit-detail/subreddit-detail.co
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutComponent } from './about/about.component';
+import { SafePipe } from './safe.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AboutComponent } from './about/about.component';
     SubredditDetailComponent,
     PostDetailComponent,
     HomePageComponent,
-    AboutComponent
+    AboutComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
